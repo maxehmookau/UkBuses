@@ -1,6 +1,8 @@
-require "uk_buses/version"
-require_relative "./uk_buses/bus"
+Dir[File.dirname(__FILE__) + '/uk_buses/*.rb'].each do |file|
+  require file
+  puts file.inspect
+end
 
 module UkBuses
-  # Your code goes here...
+  
 end
