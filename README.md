@@ -1,6 +1,6 @@
-# UkBuses
+# UKBuses
 
-TODO: Write a gem description
+Grab *real-time* bus information across the entire United Kingdom.
 
 ## Installation
 
@@ -18,7 +18,27 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Using UKBuses couldn't be simpler. 
+
+Firstly, require it at the top of your file:
+
+    require 'uk_buses'
+
+Create a `Query` object containing the bus stop code. This is normally the code written on bus stops that you text to a number to get real-time updates. They usually begin with a 2 letter code that represents your area, `cd` for Cardiff, `bn` for Brighton & Hove etc.
+
+    q = UkBuses::Query.new('cdijtgm')
+
+Then execute the query to scrape the data:
+**This can take a little while!**
+    
+    results = q.run
+
+`run` will return an array of `UkBuses::Bus` objects. 
+
+That's it!
+
+
+This is a 0.0.1 release currently so Pull Requests are greatfully received.
 
 ## Contributing
 
