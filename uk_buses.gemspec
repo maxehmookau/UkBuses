@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["maximus@zingysaturn.co.uk"]
   spec.description   = %q{Web scraper for all UK bus data}
   spec.summary       = %q{ Grab real-time bus info for all UK buses using a groovy Ruby DSL }
-  spec.homepage      = ""
+  spec.homepage      = "http://maxehmookau.github.io"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
