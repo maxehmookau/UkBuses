@@ -21,8 +21,8 @@ describe 'initialize' do
 
   it 'should allow arrives to be set' do
     bus = UkBuses::Bus.new()
-    bus.arrives = '12 mins'
-    expect(bus.arrives).to eq '12 mins'
+    bus.arrives = '11 mins'
+    expect(bus.arrives).to eq '11 mins'
   end
   
 end
