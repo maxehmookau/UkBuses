@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'bundler/setup'
 
-require 'uk_buses' # and any other gems you need
+require 'uk_buses'
 
 RSpec.configure do |config|
   # some (optional) config here
