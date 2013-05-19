@@ -31,14 +31,14 @@ Create a `Query` object containing the bus stop code. This is normally the code 
     q = UkBuses::Query.new('cdijtgm')
 
 Then execute the query to scrape the data:
+This happens automatically.
 **This can take a little while!**
-    
-    results = q.run
 
-`run` will return an array of `UkBuses::Bus` objects. 
+It will return an array of `UkBuses::Bus` objects. 
 
 That's it!
 
+UkBuses doesn't implement any caching, but it is designed to pull real-time data so it won't be required unless you're servicing thousands of requests.
 
 This is a 0.0.1 release currently so Pull Requests are greatfully received.
 
