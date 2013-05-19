@@ -1,6 +1,7 @@
 # UKBuses
 
 [![Code Climate](https://codeclimate.com/github/maxehmookau/UkBuses.png)](https://codeclimate.com/github/maxehmookau/UkBuses)
+[![Build Status](https://travis-ci.org/maxehmookau/UkBuses.png?branch=master)](https://travis-ci.org/maxehmookau/UkBuses)
 
 Grab *real-time* bus information across the entire United Kingdom.
 
