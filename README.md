@@ -18,7 +18,16 @@ Add it to your Gemfile:
     UkBuses::Query.new('cditmpa').fetch_buses
 
     #=>
-    [#<UkBuses::Bus:0x007f8fe31aa2f0 @route_number="39", @destination="Heath Hospital", @arrives="4 mins">, #<UkBuses::Bus:0x007f8fe31a9aa8 @route_number="38", @destination="Heath, Childrens Unit", @arrives="20:45">, #<UkBuses::Bus:0x007f8fe31a9260 @route_number="39", @destination="Heath Hospital", @arrives="34 mins">, #<UkBuses::Bus:0x007f8fe31a8a18 @route_number="38", @destination="Heath, Childrens Unit", @arrives="21:15">, #<UkBuses::Bus:0x007f8fe31a81d0 @route_number="39", @destination="Heath Hospital", @arrives="21:30">, #<UkBuses::Bus:0x007f8fe38af780 @route_number="38", @destination="Heath, Childrens Unit", @arrives="21:45">, #<UkBuses::Bus:0x007f8fe38aef10 @route_number="39", @destination="Heath Hospital", @arrives="22:00">, #<UkBuses::Bus:0x007f8fe38ade58 @route_number="38", @destination="Heath, Childrens Unit", @arrives="22:15">, #<UkBuses::Bus:0x007f8fe38acf58 @route_number="39", @destination="Heath Hospital", @arrives="22:30">, #<UkBuses::Bus:0x007f8fe38ac710 @route_number="38", @destination="Heath, Childrens Unit", @arrives="22:45">]
+    [#<UkBuses::Bus:0x007f8fe31aa2f0 @route_number="39", @destination="Heath Hospital", @arrives="4 mins">,
+    #<UkBuses::Bus:0x007f8fe31a9aa8 @route_number="38", @destination="Heath, Childrens Unit", @arrives="20:45">,
+    #<UkBuses::Bus:0x007f8fe31a9260 @route_number="39", @destination="Heath Hospital", @arrives="34 mins">,
+    #<UkBuses::Bus:0x007f8fe31a8a18 @route_number="38", @destination="Heath, Childrens Unit", @arrives="21:15">,
+    #<UkBuses::Bus:0x007f8fe31a81d0 @route_number="39", @destination="Heath Hospital", @arrives="21:30">,
+    #<UkBuses::Bus:0x007f8fe38af780 @route_number="38", @destination="Heath, Childrens Unit", @arrives="21:45">,
+    #<UkBuses::Bus:0x007f8fe38aef10 @route_number="39", @destination="Heath Hospital", @arrives="22:00">,
+    #<UkBuses::Bus:0x007f8fe38ade58 @route_number="38", @destination="Heath, Childrens Unit", @arrives="22:15">,
+    #<UkBuses::Bus:0x007f8fe38acf58 @route_number="39", @destination="Heath Hospital", @arrives="22:30">,
+    #<UkBuses::Bus:0x007f8fe38ac710 @route_number="38", @destination="Heath, Childrens Unit", @arrives="22:45">]
 
 **That's it.**
 
