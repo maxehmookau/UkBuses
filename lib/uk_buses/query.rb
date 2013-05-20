@@ -10,11 +10,22 @@ module UkBuses
       @stop_code = stop_code
     end
 
+    def url
+      "http://nextbuses.mobi/WebView/BusStopSearch/BusStopSearchResults/#{ @stop_code }"
+    end
+
+    def xpath
+      '//*[@id="wrapper"]/div[4]/table[1]/tr'
+    end
+
+    def get_document
+      Nokogiri::HTML(open(url))
+    end
+
     def fetch_buses
       buses = []
-      doc = Nokogiri::HTML(open("http://nextbuses.mobi/WebView/BusStopSearch/BusStopSearchResults/#{ stop_code }"))
 
-      doc.xpath('//*[@id="wrapper"]/div[4]/table[1]/tr').each do |row|
+      get_document.xpath(xpath).each do |row|
         current_bus = {}
           row.children.each do |child|
 

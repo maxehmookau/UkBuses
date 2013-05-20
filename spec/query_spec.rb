@@ -31,3 +31,48 @@ describe 'fetch_buses' do
   end
 
 end
+
+describe 'url' do
+
+  it 'should return the base URL with the stopcode appended' do
+    b = UkBuses::Query.new('cditmpa')
+    expect(b.url).to eq('http://nextbuses.mobi/WebView/BusStopSearch/BusStopSearchResults/cditmpa')
+  end
+
+end
+
+describe 'xpath' do
+
+  it 'should return an XPath string' do
+    b = UkBuses::Query.new('cditmpa')
+    expect(b.xpath).to eq('//*[@id="wrapper"]/div[4]/table[1]/tr')
+  end
+
+end
+
+describe 'get_document' do
+
+  it 'should return a Nokogiri::Document object' do
+    VCR.use_cassette('response') do
+      b = UkBuses::Query.new('cditmpa')
+      expect(b.get_document.class).to eq(Nokogiri::HTML::Document)
+    end
+  end
+
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
