@@ -1,0 +1,131 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://nextbuses.mobi/WebView/BusStopSearch/BusStopSearchResults/cditmpa
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - text/html; charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Server:
+      - Microsoft-IIS/8.0
+      X-Aspnetmvc-Version:
+      - '2.0'
+      X-Aspnet-Version:
+      - 2.0.50727
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Mon, 20 May 2013 19:09:09 GMT
+      Content-Length:
+      - '1404'
+    body:
+      encoding: UTF-8
+      string: "\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"
+        \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\"
+        xml:lang=\"en\">\r\n<head id=\"ctl00_Head1\">\r\n        <link href=\"/Assets/site.css\"
+        rel=\"stylesheet\" type=\"text/css\" />\r\n        <meta name=\"viewport\"
+        content=\"width=device-width, initial-scale=1.0, target-densitydpi=device-dpi\"
+        />\r\n    <link rel=\"shortcut icon\" href=\"/Assets/Images/favicon.ico\"
+        type=\"image/x-icon\" />\r\n    <meta name=\"HandheldFriendly\" content=\"true\"
+        />\r\n    \r\n<title>\r\n\tNextBuses | Bus Stop Search Results\r\n</title></head>\r\n<body
+        id=\"ctl00_nextBuses\">\r\n    <div id=\"wrapper\">\r\n    <div id=\"nbHeader\"
+        class=\"header\">\r\n        <div class=\"nbLogo\"></div>\r\n        <div
+        class=\"tlLogo\"></div>\r\n        <div class=\"clear\"></div>\r\n    </div>\r\n
+        \   <div class=\"top-menu\">\r\n        <a class=\"active\" href=\"/WebView/BusStopSearch/Index\">Home</a>\r\n
+        \       <a href=\"/WebView/Feedback/Feedback\">Feedback</a>\r\n        <a
+        href=\"/WebView/Help/Help\">Info</a>\r\n    </div>\r\n    <div class=\"top-menu-ds\"></div>\r\n
+        \   <div class=\"content\">\r\n        \r\n    \r\n             <!-- Departure
+        Board Results -->\r\n             <h2>Departures</h2>  \r\n             <h5>\r\n
+        \               20/05/2013 20:09:09<br />\r\n                Churchill Way
+        (Stop HQ), Cardiff\r\n            </h5>\r\n            \r\n                <p
+        class=\"Stops\"><a href=\"/WebView/BusStopSearch/BusStopSearchResults/cditmpa\">[Refresh
+        Departures]</a></p>\r\n                \r\n                <table class=\"BusStops\"
+        style=\"width:794px;\">\r\n                \r\n                    <tr>\r\n
+        \                       <td class=\"Number\">\r\n                            <p
+        class=\"Stops\"><a href=\"/WebView/BusStopSearch/BusStopSearchResults/cditmpa?searchType=route&amp;searchFilter=38\">38</a></p>\r\n
+        \                       </td>\r\n                        <td>\r\n                            <p
+        class=\"Stops\">Heath Hospital&nbsp;in 5 mins</p>\r\n                        </td>\r\n
+        \                   </tr>\r\n                    \r\n                    <tr>\r\n
+        \                       <td class=\"Number\">\r\n                            <p
+        class=\"Stops\"><a href=\"/WebView/BusStopSearch/BusStopSearchResults/cditmpa?searchType=route&amp;searchFilter=39\">39</a></p>\r\n
+        \                       </td>\r\n                        <td>\r\n                            <p
+        class=\"Stops\">Heath Hospital&nbsp;in 20 mins</p>\r\n                        </td>\r\n
+        \                   </tr>\r\n                    \r\n                    <tr>\r\n
+        \                       <td class=\"Number\">\r\n                            <p
+        class=\"Stops\"><a href=\"/WebView/BusStopSearch/BusStopSearchResults/cditmpa?searchType=route&amp;searchFilter=38\">38</a></p>\r\n
+        \                       </td>\r\n                        <td>\r\n                            <p
+        class=\"Stops\">Heath Hospital&nbsp;at 20:45</p>\r\n                        </td>\r\n
+        \                   </tr>\r\n                    \r\n                    <tr>\r\n
+        \                       <td class=\"Number\">\r\n                            <p
+        class=\"Stops\"><a href=\"/WebView/BusStopSearch/BusStopSearchResults/cditmpa?searchType=route&amp;searchFilter=39\">39</a></p>\r\n
+        \                       </td>\r\n                        <td>\r\n                            <p
+        class=\"Stops\">Heath Hospital&nbsp;at 21:00</p>\r\n                        </td>\r\n
+        \                   </tr>\r\n                    \r\n                    <tr>\r\n
+        \                       <td class=\"Number\">\r\n                            <p
+        class=\"Stops\"><a href=\"/WebView/BusStopSearch/BusStopSearchResults/cditmpa?searchType=route&amp;searchFilter=38\">38</a></p>\r\n
+        \                       </td>\r\n                        <td>\r\n                            <p
+        class=\"Stops\">Heath Hospital&nbsp;at 21:15</p>\r\n                        </td>\r\n
+        \                   </tr>\r\n                    \r\n                    <tr>\r\n
+        \                       <td class=\"Number\">\r\n                            <p
+        class=\"Stops\"><a href=\"/WebView/BusStopSearch/BusStopSearchResults/cditmpa?searchType=route&amp;searchFilter=39\">39</a></p>\r\n
+        \                       </td>\r\n                        <td>\r\n                            <p
+        class=\"Stops\">Heath Hospital&nbsp;at 21:30</p>\r\n                        </td>\r\n
+        \                   </tr>\r\n                    \r\n                    <tr>\r\n
+        \                       <td class=\"Number\">\r\n                            <p
+        class=\"Stops\"><a href=\"/WebView/BusStopSearch/BusStopSearchResults/cditmpa?searchType=route&amp;searchFilter=38\">38</a></p>\r\n
+        \                       </td>\r\n                        <td>\r\n                            <p
+        class=\"Stops\">Heath Hospital&nbsp;at 21:45</p>\r\n                        </td>\r\n
+        \                   </tr>\r\n                    \r\n                    <tr>\r\n
+        \                       <td class=\"Number\">\r\n                            <p
+        class=\"Stops\"><a href=\"/WebView/BusStopSearch/BusStopSearchResults/cditmpa?searchType=route&amp;searchFilter=39\">39</a></p>\r\n
+        \                       </td>\r\n                        <td>\r\n                            <p
+        class=\"Stops\">Heath Hospital&nbsp;at 22:00</p>\r\n                        </td>\r\n
+        \                   </tr>\r\n                    \r\n                    <tr>\r\n
+        \                       <td class=\"Number\">\r\n                            <p
+        class=\"Stops\"><a href=\"/WebView/BusStopSearch/BusStopSearchResults/cditmpa?searchType=route&amp;searchFilter=38\">38</a></p>\r\n
+        \                       </td>\r\n                        <td>\r\n                            <p
+        class=\"Stops\">Heath Hospital&nbsp;at 22:15</p>\r\n                        </td>\r\n
+        \                   </tr>\r\n                    \r\n                    <tr>\r\n
+        \                       <td class=\"Number\">\r\n                            <p
+        class=\"Stops\"><a href=\"/WebView/BusStopSearch/BusStopSearchResults/cditmpa?searchType=route&amp;searchFilter=39\">39</a></p>\r\n
+        \                       </td>\r\n                        <td>\r\n                            <p
+        class=\"Stops\">Heath Hospital&nbsp;at 22:30</p>\r\n                        </td>\r\n
+        \                   </tr>\r\n                    \r\n                </table>\r\n
+        \               \r\n                <div class=\"clear\"></div>\r\n                \r\n
+        \               <!-- MAP -->\r\n                <p class=\"Stops\">\r\n                <a
+        href=\"/WebView/BusStopSearch/BusStopSearchResults/cditmpa?searchMap=true\">[Show
+        Stop on Map]</a>\r\n                </p>    \r\n                \r\n                <p
+        class=\"Stops\">\r\n                    <a href=\"/WebView/BusStopSearch/BusStopSearchResults/ll_51.4814,-3.17261~Churchill%20Way,%20Cardiff\">[Show
+        Nearby Stops]</a>\r\n                </p>\r\n                \r\n                <table
+        id=\"tblPaging\" class=\"Paging\" style=\"width: 794px;\">\r\n                \r\n
+        \                   <tr>\r\n                        <td class=\"Top\" colspan=\"3\"></td>\r\n
+        \                   </tr>\r\n                    <tr>\r\n                        <td
+        class=\"Side\"><a class=\"Zoom Left invisible\" href=\"/WebView/BusStopSearch/BusStopSearchResults/cditmpa?currentPage=-1\">Previous</a></td>\r\n
+        \                       <td></td>\r\n                        <td class=\"Side\"><a
+        class=\"Zoom Right visible\" href=\"/WebView/BusStopSearch/BusStopSearchResults/cditmpa?currentPage=1\">Next</a></td>\r\n
+        \                   </tr>\r\n                    <tr>\r\n                        <td
+        class=\"Top\" colspan=\"3\"></td>\r\n                    </tr>\r\n                </table>
+        \r\n                <div class=\"clear\"></div>\r\n                \r\n        <div
+        class=\"clear\"></div>\r\n        \r\n    </div>\r\n    <div class=\"footer\"></div>\r\n
+        \   </div>\r\n</body>\r\n</html>\r\n"
+    http_version: 
+  recorded_at: Mon, 20 May 2013 19:09:03 GMT
+recorded_with: VCR 2.5.0

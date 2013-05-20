@@ -4,11 +4,13 @@ require 'open-uri'
 module UkBuses
   class Query
 
+    attr_accessor :stop_code
+
     def initialize(stop_code)
-      fetch_buses(stop_code)
+      @stop_code = stop_code
     end
 
-    def fetch_buses(stop_code)
+    def fetch_buses
       buses = []
       doc = Nokogiri::HTML(open("http://nextbuses.mobi/WebView/BusStopSearch/BusStopSearchResults/#{ stop_code }"))
 
