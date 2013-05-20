@@ -7,41 +7,30 @@ Grab *real-time* bus information across the entire United Kingdom.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add it to your Gemfile:
 
-    gem 'uk_buses'
+`gem 'uk_buses'`
 
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install uk_buses
-
-## Usage
-
-Using UKBuses couldn't be simpler. 
-
-Firstly, require it at the top of your file:
+## Use it
 
     require 'uk_buses'
+    ...
+    UkBuses::Query.new('cditmpa').fetch_buses
 
-Create a `Query` object containing the bus stop code. This is normally the code written on bus stops that you text to a number to get real-time updates. They usually begin with a 2 letter code that represents your area, `cd` for Cardiff, `bn` for Brighton & Hove etc.
+    #=>
+    [#<UkBuses::Bus:0x007f8fe31aa2f0 @route_number="39", @destination="Heath Hospital", @arrives="4 mins">, #<UkBuses::Bus:0x007f8fe31a9aa8 @route_number="38", @destination="Heath, Childrens Unit", @arrives="20:45">, #<UkBuses::Bus:0x007f8fe31a9260 @route_number="39", @destination="Heath Hospital", @arrives="34 mins">, #<UkBuses::Bus:0x007f8fe31a8a18 @route_number="38", @destination="Heath, Childrens Unit", @arrives="21:15">, #<UkBuses::Bus:0x007f8fe31a81d0 @route_number="39", @destination="Heath Hospital", @arrives="21:30">, #<UkBuses::Bus:0x007f8fe38af780 @route_number="38", @destination="Heath, Childrens Unit", @arrives="21:45">, #<UkBuses::Bus:0x007f8fe38aef10 @route_number="39", @destination="Heath Hospital", @arrives="22:00">, #<UkBuses::Bus:0x007f8fe38ade58 @route_number="38", @destination="Heath, Childrens Unit", @arrives="22:15">, #<UkBuses::Bus:0x007f8fe38acf58 @route_number="39", @destination="Heath Hospital", @arrives="22:30">, #<UkBuses::Bus:0x007f8fe38ac710 @route_number="38", @destination="Heath, Childrens Unit", @arrives="22:45">]
 
-    q = UkBuses::Query.new('cdijtgm')
+**That's it.**
 
-Then execute the query to scrape the data:
-This happens automatically.
-**This can take a little while!**
+## Is this ok?
 
-It will return an array of `UkBuses::Bus` objects. 
+I don't know. This was a weekend hack project; there's no intention here to commercialise anything or commit any crime. This data is available in the **public domain**, on publically accessible websites, this gem just displays the data in a more geek-friendly format. But I'm aware that some companies aren't too keen on this.
+Use of the MIT licence implies that you use this gem at your own risk.
 
-That's it!
+My views mirror that of ScraperWiki:
 
-UkBuses doesn't implement any caching, but it is designed to pull real-time data so it won't be required unless you're servicing thousands of requests.
-
-This is a 0.0.1 release currently so Pull Requests are greatfully received.
+*It is our view that, where a web server responds to an unauthenticated HTTP request, there is an implied licence to use the HTML that is returned for reading and automatically extracting that information. This, in our view, is how the web is designed to operate. If the proprietor of a web host wishes (for example) to charge for use of their site, HTTP provides mechanisms to require payment or authentication for use. They may also make use of the robots exclusion protocol to prevent scraping and spidering of any kind.
+Of course we may be wrong about this. The question has not been tested in any UK court and, we understand, there is not much more clarity world-wide. If you are in doubt about whether what you are doing is lawful, you should seek your own legal advice, rather than relying on our best guess.*
 
 ## Contributing
 
